@@ -1,0 +1,449 @@
+body{
+    font-family: "Open Sans", Roboto,Verdana, Geneva, sans-serif;
+    background-color: #383838;
+    margin: 0;
+}
+p{
+    font-size: 14px;
+}
+#map {
+    height: calc(100vh - 114px);;
+    width:100%;
+    margin-right:40px;
+}
+.loading{
+    text-align: center;
+    width:100%;
+    max-width:600px;
+    margin:100px auto;
+}
+.loading p{
+    font-size:25px;
+}
+.map-and-list{
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    margin-bottom:20px;
+    background-color: #fff;
+}
+#street-view{
+    height: auto;
+    max-height:600px;
+    order: 1;
+    width: 100%;
+    min-width: 320px;
+}
+#pano, #street-view-wrapper{
+    max-height:600px;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+}
+
+#listing {
+    width: 100%;
+    height: calc(100vh - 156px);
+    overflow: auto;
+    cursor: pointer;
+    overflow-x: hidden;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#search{
+    position: absolute;
+}
+#locationField {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 122px;
+    top: 21px;
+    z-index: 5;
+}
+#autocomplete-input, #autocompleteRestaurant-input{
+    font-size: 15px;
+    padding: 3px;
+    width: 100%;
+}
+#autocompleteRestaurant-input{
+    margin-top:10px;
+}
+#controls {
+    position: absolute;
+    left: 300px;
+    width: 140px;
+    top: 0px;
+    z-index: 5;
+    background-color: #fff;
+}
+
+#country {
+    width: 100%;
+}
+.placeIcon{
+    height:80px;
+}
+.placeIcon img {
+    width: 92px;
+    height: 80px;
+    margin-right: 15px;
+}
+#results .rating{
+    font-size:15px;
+}
+.results-list{
+    display:flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+.placeDetails{
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.results-list:hover{
+    background-color:#f2f2f2;;
+}
+.results-list:last-child{
+    margin-bottom:10px;
+}
+#rating {
+    font-size: 13px;
+    font-family: Arial Unicode MS Verdana;
+}
+.iw_table_row {
+    height: 18px;
+}
+.iw_attribute_name {
+    font-weight: bold;
+    text-align: right;
+}
+.iw_table_icon {
+    text-align: right;
+}
+#iw-icon{
+    font-weight:bold
+}
+.profile-photo{
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right:20px;
+}
+.review-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#more{
+    display: none;
+}
+#more, #add-to-array, #add-restaurant{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #8fb31d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13px;
+}
+#more:hover, #add-to-array:hover, #add-restaurant:hover{
+    background-color: #c2e254;
+}
+.container{
+    display: Flex;
+
+}
+.restaurant{
+    width:70%;
+    max-width:800px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.info-wrapper{
+    min-width: 330px;
+    width: 330px;
+    background-color: #fff;
+}
+.map-wrapper{
+    min-width:320px;
+    width: 100%;
+    height:600px;
+    padding:10px;
+}
+.restaurant-name{
+    color:#96bb1e;
+}
+#restaurant-info{
+    background-color: #fff;
+    padding: 10px;
+}
+.rating{
+    font-size:22px;
+    color:#eb853b;
+}
+.restaurant-reviews{
+    border-bottom: 1px solid #c8c9cb;
+}
+header{
+    display:flex;
+    padding:15px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+header h1{
+    color: #eb853b;
+    margin:0 auto;
+
+}
+.sort{
+    background-color: #c8c9cb;
+    padding: 10px 0;
+    text-align: center;
+    color: #000;
+}
+.sort label{
+    margin-right: 10px;
+}
+#info-window{
+    max-width:300px;
+}
+.restaurant-details{
+    margin:0;
+}
+#info-content .extra-details{
+    color: #383838;
+    font-weight: 300;
+    font-size: 13px;
+    max-width:300px;
+}
+#info-content .extra-details div{
+    padding-bottom:5px;
+}
+#iw-rating{
+    color: #eb853b;
+    font-size: 25px;
+    text-align: center;
+    font-weight:600;
+    margin:0;
+}
+#iw-url {
+    font-size: 20px;
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+
+#iw-url a{
+    color:#96bb1e;
+}
+#website a, #iw-website a{
+    color:#eb853b;
+}
+#iw-url a, #website a #iw-website a{
+    text-decoration:none;
+}
+
+#iw-url a:hover{
+    color:#c2e254;
+    text-decoration:underline;
+}
+#website a:hover, #iw-website a:hover{
+    color:#ffc527;
+    text-decoration:underline;
+}
+#info-content .gm-style .photo{
+    height: 190px;
+    width: 300px;
+}
+/* add a review form */
+
+#add-review{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+#add-review input, #add-review textarea{
+    margin-bottom:20px;
+}
+
+#your-review{
+    height: 70px;
+    font-size: 12px;
+    padding: 5px;
+}
+#your-rating{
+    width: 50px;
+    height: 20px;
+    border-radius: unset;
+    border: none;
+}
+.main-button{
+    background-color:#eb853b;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 11px;
+    height: 40px;
+    min-width: 90px;
+    margin: 0 0 0 10px;
+}
+.main-button a{
+    text-decoration: none;
+    color:#fff;
+}
+#see-photo, #see-street-view{
+    min-width:105px;
+}
+#street-view{
+    height: auto;
+    max-height: 600px;
+    order: 1;
+    width: 100%;
+    min-width: 320px;
+}
+.review-header{
+    display:flex;
+    justify-content: space-between;
+}
+#add-review label{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+#add-review input{
+    height: 15px;
+    padding: 5px;
+    font-size: 13px;
+    width: 250px;
+}
+#add-review textarea, #add-review input{
+    border: 1px solid #c8c9cb;
+}
+
+#info-content-small{
+    font-size:13px;
+}
+#iw-icon-small .gm-style .photo{
+    width:50px;
+    height:35px;
+}
+#iw-icon .photo{
+    max-width: 300px;
+    max-height: 200px;
+}
+#photo{
+    order: 2;
+}
+#info-content-small .photo{
+    height: 35px;
+    width: 50px;
+}
+#iw-rating-small{
+    color: #eb853b;
+    margin:0;
+}
+#iw-url-small, .reviews-link{
+    text-decoration: none;
+    color:#96bb1e;
+}
+.reviews-link:hover{
+    text-decoration: underline;
+}
+
+#iw-reviews{
+    color: #eb853b;
+    text-decoration:none;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+}
+#iw-reviews:hover{
+    color:#ffc527;
+    text-decoration:underline;
+}
+.button-menu{
+    display:flex;
+    justify-content: flex-end;
+}
+.heading h2{
+    margin:0;
+}
+
+/* add new restaurant form info window */
+#form-add-restaurant{
+    max-width: 300px;
+
+}
+#form-add-restaurant input{
+    height: 20px;
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+#form-add-restaurant select{
+    height: 20px;
+    width: 50px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    border-radius: unset;
+    border: none;
+}
+.add-res-heading{
+    color: #96bb1e;
+}
+#add-restaurant {
+    width: 95%;
+}
+
+
+/* media queries */
+@media screen and (max-width:768px){
+    #map{
+        height:100%;
+        margin-bottom:10px;
+    }
+    #street-view{
+        height:300px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .info-wrapper{
+        width: auto;
+        margin-right: 0;
+    }
+    #locationField{
+        left:132px;
+        top:14px;
+        width:170px;
+    }
+    .container, .map-and-list, header{
+        flex-direction: column;
+    }
+    .restaurant{
+        order:2;
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+    .map-wrapper{
+        padding:0;
+    }
+    .logo{
+        text-align: center;
+    }
+    #iw-icon .photo{
+        display:none;
+    }
+
+}
