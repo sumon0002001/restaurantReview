@@ -1,5 +1,5 @@
 # Launch your own restaurant review site
-## FrontEnd Web Developer Project 7
+## FrontEnd Web Developer 
 ### JavaScript, Google maps API, Google Places API, HTML5, CSS3
 
 
@@ -13,36 +13,8 @@
 * Add a restaurant by clicking on a specific place on the map
 * Use the Google search API to find restaurants in a particular display area.
 
-#### By Debbie O'Brien
-25 September 2017
+#### By Mir Rawshan Ali
+25 September 2019
 
 
-### View the applicatiion here
-https://debs-obrien.github.io/restaurant-reviews-OpenClassRooms-project-7
 
-![Screenshot](img/Screenshot.png)
-
-### Example Code
-```javascript
-/*-----------------------------------------------------------------------------------
-Builds the small info Window
--------------------------------------------------------------------------------------*/
-function buildIWContentSmall(place) {
-   document.getElementById('iw-icon-small').innerHTML = '<img class="photo" ' + 'src="' + createPhoto(place) + '"/>';
-   document.getElementById('iw-url-small').innerHTML = '<b>' + place.name + '</b>';
-   if (place.rating) {
-       let ratingHtml = '';
-       for (let i = 0; i < 5; i++) {
-          if (place.rating < (i + 0.5)) {
-              ratingHtml += '&#10025;';
-          } else {
-              ratingHtml += '&#10029;';
-          }
-          document.getElementById('iw-rating-small').style.display = '';
-          document.getElementById('iw-rating-small').innerHTML = ratingHtml;
-       }
-   } else {
-       document.getElementById('iw-rating-small').style.display = 'none';
-   }
-}
-```
