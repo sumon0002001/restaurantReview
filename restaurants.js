@@ -11,16 +11,16 @@ eqfeed_callback({
             },
             "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
             "id": 0,
-            "name": "Debbie\'s Restaurant",
+            "name": "Rawshan\'s Restaurant",
             "formatted_phone_number": "6677666",
-            "url": "debbies.restaurant.com",
-            "website": "debbies.restaurant.com",
+            "url": "rawshan.restaurant.com",
+            "website": "rawshan.restaurant.com",
             "opening_hours": {
                 "open_now": true
             },
             "rating": '4',
             "reviews": [{
-                "name": "Debbie",
+                "name": "Rawshan",
                 "rating":5,
                 "text": "amazing food, best place ever",
                 "relative_time_description": "2 days ago"
@@ -40,16 +40,16 @@ eqfeed_callback({
             },
             "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
             "id": 1,
-            "name": "Debbie\'s Restaurant 2",
+            "name": "Rawshan\'s Restaurant 2",
             "formatted_phone_number": "66776662",
-            "url": "debbies.restaurant2.com",
-            "website": "debbies.restaurant2.com",
+            "url": "rawshan.restaurant2.com",
+            "website": "rawshan.restaurant2.com",
             "opening_hours": {
                 "open_now": true
             },
             "rating": 4,
             "reviews": [{
-                "name": "John",
+                "name": "Iqbal",
                 "rating":4,
                 "text": "not bad food, good music",
                 "relative_time_description": "3 days ago"
@@ -70,10 +70,10 @@ eqfeed_callback({
             },
             "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
             "id": 2,
-            "name": "Debbie\'s Restaurant 3",
+            "name": "Rawshan\'s Restaurant 3",
             "formatted_phone_number": "6677666",
-            "url": "debbies.restaurant3.com",
-            "website": "debbies.restaurant3.com",
+            "url": "rawshan.restaurant3.com",
+            "website": "rawshan.restaurant3.com",
             "opening_hours": {
                 "open_now": true
             },
@@ -100,16 +100,16 @@ eqfeed_callback({
             },
             "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
             "id": 3,
-            "name": "Debbie\'s Restaurant 4",
+            "name": "Rawshan\'s Restaurant 4",
             "formatted_phone_number": "66776664",
-            "url": "debbies.restaurant4.com",
-            "website": "debbies.restaurant4.com",
+            "url": "rawshan.restaurant4.com",
+            "website": "rawshan.restaurant4.com",
             "opening_hours": {
                 "open_now": true
             },
             "rating": 4.6,
             "reviews": [{
-                "name": "Toni",
+                "name": "Yasir",
                "rating":4,
                "text": "excellent food, it was very nice",
                "relative_time_description": "5 days ago"
